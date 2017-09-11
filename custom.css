@@ -77,12 +77,57 @@ html, body {
 /* }*/
 
 
-.row {
-    text-align:center;
+/*.row {*/
+/*    text-align:center;*/
+/*}*/
+.loc {
+   margin-top: 1rem;
+   text-align: center;
 }
 
 .drink_loc img{
     width:100%;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        overflow: hidden;
+    }
+}
+
+.sch_type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 0px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sch_opt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sch_div {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#sch1 img{
+    width:100%;
+}
+
+
+#talk {
+    padding: 60px 0px;
 }
 
 #footer {
