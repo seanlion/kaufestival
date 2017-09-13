@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>좋아항대</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!--모바일-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no,maximum-scale=1.0,minimum-scale=1.0, user-scalable=0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <!--Spoqa 폰트 css-->
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css' rel='stylesheet' type='text/css'>
@@ -57,17 +63,18 @@
       <header class="header">
       </header>
       
-      <section class= "schedule">
-        <div class="container">
+      <section id= "schedule" class="bg_color1">
+        <div class="container ">
           <div class="row justify-content-center">
               <div class="col-lg-12">
-                <h2 class="loc">주점/무대 위치</h2>  
+                <h2 class="loc"><img src="/img/star.png"/>주점/무대 위치<img src="/img/star.png"/></h2>  
+                <hr class="star-primary">
               </div>
           </div>
           
           <div class="row justify-content-center">
             <div class="drink_loc w-75">
-              <img src="/asset/drink_loc_1.png" alt="alt drink">
+              <img src="/asset/drink_loc_3.png" alt="alt drink">
             </div>  
           </div>
         </div>
@@ -85,6 +92,9 @@
                <!-- 라이브리 시티 설치 코드 -->
                 <div id="lv-container" data-id="city" data-uid="MTAyMC8zMDgwMS83MzUz">
 	                <script type="text/javascript">
+	             //     window.livereOptions = {
+            		// 	refer: 'wontop.net'
+            		//   };
                   (function(d, s) {
                       var j, e = d.getElementsByTagName(s)[0];
                 
