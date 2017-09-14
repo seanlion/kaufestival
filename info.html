@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>좋아항대</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-     <!--모바일-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no,maximum-scale=1.0,minimum-scale=1.0, user-scalable=0" />
-    <meta name="HandheldFriendly" content="true" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--Spoqa 폰트 css-->
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css' rel='stylesheet' type='text/css'>
@@ -17,9 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <!--custom scss-->
+     <!--custom scss-->
     <link rel="stylesheet" href="/custom.css?ver=1"  type="text/css">
-
+     
+    
+  
+   
   </head>
   <body>
     <div id="wrap">
@@ -36,10 +33,10 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link px-lg-2" href="/index.html" lang = "ko">홈 <span class="sr-only">(현재페이지)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link px-lg-2" href="/schedule.html" lang = "ko">일정</a>
           </li>
           <li class="nav-item">
@@ -49,7 +46,7 @@
             <a class="nav-link px-lg-2" href="#" lang = "ko">마당사업</a>
           </li>
           <li class="nav-item px-lg-2">
-            <a class="nav-link" href="#" lang = "ko">INFO</a>
+            <a class="nav-link" href="/info.html" lang = "ko">INFO</a>
           </li>
           <!--<li class="nav-item px-lg-2">-->
           <!--  <a class="nav-link" href="#" lang = "ko">좋아항대Talk</a>-->
@@ -60,61 +57,68 @@
     
     
     <div id="content">
-      <header class="header">
-      </header>
-      
-      <section id= "schedule" class="bg_color1">
-        <div class="container ">
-          <div class="row justify-content-center">
-              <div class="col-lg-12">
-                <h2 class="loc"><img src="/img/star.png"/>주점/무대 위치<img src="/img/star.png"/></h2>  
-                <hr class="star-primary">
-              </div>
-          </div>
-          
-          <div class="row justify-content-center">
-            <div class="drink_loc w-75">
-              <img src="/asset/drink_loc_3.png" alt="alt drink">
-            </div>  
-          </div>
-        </div>
-      </section>
-    </div>
-      <!--항대 토크-->
-      <section id="talk">
-        <div class="container">
-          <div class="row justify-content-center">
-          항대토크
-          </div>
-          
-          <div class="row justify-content-center">
-            <div class="col-lg-8 col-lg-offset-2">
-               <!-- 라이브리 시티 설치 코드 -->
-                <div id="lv-container" data-id="city" data-uid="MTAyMC8zMDgwMS83MzUz">
-	                <script type="text/javascript">
-	             //     window.livereOptions = {
-            		// 	refer: 'wontop.net'
-            		//   };
-                  (function(d, s) {
-                      var j, e = d.getElementsByTagName(s)[0];
-                
-                      if (typeof LivereTower === 'function') { return; }
-                
-                      j = d.createElement(s);
-                      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                      j.async = true;
-                
-                      e.parentNode.insertBefore(j, e);
-                  })(document, 'script');
-	                </script>
-                  <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
-                </div>
-            <!-- 시티 설치 코드 끝 -->
-            </div>
-          </div>
-        </div>
-      </section>
-      
+       <section id="info">
+         <div class="container">
+           <div class="row">
+             <div class="sch_type">
+               <div class="sch_type_div">
+                 <p class= "btn btn2" rel="type1">알림사항</p>
+               </div>
+               <div class="sch_type_div">
+                 <p class= "btn btn2" rel="type2">대중교통시간</p>
+               </div>
+               <div class="sch_type_div">
+                 <p class= "btn btn2" rel="type3">학교 오는길</p>
+               </div>
+             </div>
+           </div>
+           <div class="type_container">
+           <!--축제 일정-->
+           <div id="type1" class="row">
+             <div class="sch_opt">
+               <div class="sch_date_div">
+                 <p class="btn btn1" rel="sch1">항대존</p>
+               </div>
+               <div class="sch_date_div">
+                 <p class= "btn btn1" rel="sch2">공지사항</p>
+               </div>
+             </div>
+             
+             <div class="sch_div">
+               <div id="sch1" clsss="sch_img_div">
+                 <img src="/asset/test3-10.png" alt="alt text22">
+               </div>
+               <div id="sch2" clsss="sch_img_div">
+                 <img src="/asset/test3-6.png" alt="alt text2">
+               </div>
+             
+             </div>
+           </div>
+           
+           <!--대중교통 시간-->
+           <div id="type2" class="row">
+             <div id="type_div" class="sch_program">
+               <div class="sch_program_div">
+                 <img src="/asset/thumb.png" alt="22">
+                 <img src="/asset/test3-2.png" alt="33">
+               </div>
+             </div>
+           </div>
+         <!--대중교통 시간 끝-->
+         
+          <!--학교 오는길-->
+           <div id="type2" class="row">
+             <div id="type_div" class="sch_program">
+               <div class="sch_program_div">
+                 <img src="/asset/thumb.png" alt="22">
+                 <img src="/asset/test3-2.png" alt="33">
+               </div>
+             </div>
+           </div>
+         <!--학교 오는길 끝-->
+         </div>
+         </div>
+       </section>
       
       
      
@@ -130,11 +134,15 @@
         <p class="copyright">2017 &copy; Likelion KAU All Rights Reserved.</p>
       </footer>
 
-    <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Popper.js Bootstrap.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!--custom js-->
+    <script type="text/javascript" src="/js/custom.js?ver=1"></script>
+    
   </div>
   </body>
 </html>
