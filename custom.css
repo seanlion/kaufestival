@@ -16,6 +16,8 @@ html, body {
     height: 100%; 
 }
 
+/*네비게이션*/
+
 .kaulikelion_logo {
   width:50px;
   height:50px;
@@ -60,6 +62,8 @@ html, body {
     
 }
 
+/*헤더*/
+
 .header {
     
     height: 650px;
@@ -70,6 +74,38 @@ html, body {
     min-height:100%;
 }
 
+
+@media (max-width:767px){
+    
+    header{
+        text-align:center;background:none;color:#fff; 
+        background-position: center center;
+        background-image: url('/asset/main_bg.png');
+        background-size: cover;
+        height: 650px;
+        min-height:100%;
+     }
+    .navbar-brand{
+        padding:10px 20px;
+        
+    }
+    .navbar-brand img{
+        height:100%;
+    }
+    
+    hr.star-light,hr.star-primary{
+        border-top:solid 2px;text-align:center;max-width:180px;}
+    
+    .navbar img{
+        height:100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+    
+}
+
+
 /*.footer { */
     /*position: relative; margin-top: -120px;  height: 120px; clear:both; */
 /*    text-align: center;*/
@@ -77,14 +113,163 @@ html, body {
 /* }*/
 
 
-.row {
-    text-align:center;
+/*.row {*/
+/*    text-align:center;*/
+/*}*/
+.loc {
+   margin-top: 1rem;
+   text-align: center;
+   /*color: #fff;*/
 }
+
+/*수평선 css*/
+
+hr.star-light,hr.star-primary{
+    padding:0;
+    border:none;border-top:solid 3px;
+    text-align:center;max-width:250px;
+    margin:25px auto 30px}
+    
+hr.star-light:after,hr.star-primary:after{
+    content:"";font-family:FontAwesome;
+    display:inline-block;
+    position:relative;
+    top:-.8em;font-size:2em;padding:0 .25em
+    }
+
+hr.star-light{
+    border-color:#fff
+}
+
+hr.star-light:after{
+    background-color:#18BC9C;color:#fff
+}
+
+hr.star-primary{border-color:#2C3E50}
+hr.star-primary:after{background-color:#fff;color:#2C3E50}
+.img-centered{margin:0 auto}
+
+/*.bg_color1{*/
+/*    background-color: #454545;*/
+/*}*/
+
+/*주점위치*/
 
 .drink_loc img{
     width:100%;
 }
 
+/*일정*/
+
+
+#schedule{
+    color:#662408;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        overflow: hidden;
+    }
+}
+
+.sch_type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 0px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sch_type .sch_type_div:first-child .btn{
+    border:1px solid #662408;
+    background-color: #662408;
+    color:#EFE7E6;
+    
+}
+.sch_type .sch_type_div .btn{
+    border:1px solid #EFE7E6;
+    background-color: #EFE7E6;
+    color:#662408;
+}
+
+.sch_type_div .btn:hover{
+    border:1px solid #662408;
+    background-color: #662408;
+    color:#EFE7E6;
+    cursor: pointer;
+}
+
+#type2 {
+    display:none;
+}
+
+.sch_opt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sch_opt .sch_date_div:first-child .btn{
+    border:1px solid #662408;
+    background-color: #662408;
+    color:#EFE7E6;
+    
+}
+.sch_opt .sch_date_div .btn{
+    border:1px solid #EFE7E6;
+    background-color: #EFE7E6;
+    color:#662408;
+}
+
+.sch_date_div .btn:hover{
+    border:1px solid #662408;
+    background-color: #662408;
+    color:#EFE7E6;
+    cursor: pointer;
+}
+
+.sch_div {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.sch_div img{
+    width:100%;
+}
+
+
+
+#schdule .star-primary{
+    border-color:#662408;
+}
+
+
+#sch2 {
+    display:none;
+}
+
+/*#div2-2,#div3-2{*/
+/*    display:none;*/
+/*}*/
+/*#div2-3,#div3-3,#div4-3,#div5-3,#div6-3,#div7-3,#div8-3,#div9-3,#div10-3,#div11-3,#div12-3,#div13-3,#div14-3,#div15-3,#div16-3{*/
+/*    display:none;*/
+/*}*/
+
+/*항대 talk*/
+
+#talk {
+    padding: 60px 0px;
+}
+
+/*푸터*/
 #footer {
     background: #f8f8f8;
     position: absolute;
