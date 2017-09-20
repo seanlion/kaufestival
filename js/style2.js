@@ -1,54 +1,3 @@
- /*!
-  * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
-  * Copyright 2013-2016 Start Bootstrap
-  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
-  */
-
-
-// var cute = document.getElementById('cute');
-// cute.addEventListener('click', function(){
-//       ('.btn1').css("background-color","#EFE7E6");
-//       ('.btn1').css("border-color","#EFE7E6");
-//       ('.btn1').css("color","#662408");
-//       (this).css("background-color","#662408");
-//       (this).css("border-color","#662408");
-//       (this).css("color","#EFE7E6");
-// // });
-//  $('.btn1').on('click', function(){
-//       var target = $(this).attr('rel');
-//       ('.btn1').css("background-color","#EFE7E6");
-//       ('.btn1').css("border-color","#EFE7E6");
-//       ('.btn1').css("color","#662408");
-//       (this).css("background-color","#662408");
-//       (this).css("border-color","#662408");
-//       (this).css("color","#EFE7E6");
-//   });
-
-
-// function changeimage() {
-//     var image = document.getElementById('abc');
-//     if (image.src.match("naver")) {
-//         image.src = "/도덕.jpg";
-//     } else {
-//         image.src = "/산이.jpg";
-//     }
-// }
-
-// $('.second').toggle(
-//     function(){
-//         $('.photo').attr('src', '도덕.jpg');
-//     }, function() {
-//         $('.photo').attr('src', '긱스.png');
-//     }
-// );
-// $('.first').toggle(
-//     function(){
-//         $('.photo').attr('src', '긱스.png');
-//     }, function() {
-//         $('.photo').attr('src', '도덕.jpg');
-//     }
-// );
-
  /*global $*/ 
   $('.btn1').on('click', function(){
       var target = $(this).attr('rel');
@@ -64,7 +13,7 @@
       // $("#"+target).siblings().hide();
      
    });
- 
+
  
   $('.btn2').on('click', function(){
       var target2 = $(this).attr('rel');
@@ -78,6 +27,7 @@
       // $("#sch2").toggle();
       $("#"+target2).show().siblings(".row").hide();
    });
+   
    
    
 var acc = document.getElementsByClassName("madangpanel");
