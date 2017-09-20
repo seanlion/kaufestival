@@ -1,3 +1,26 @@
+/*font setting*/
+@font-face {
+  font-family: 'Godo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
+}
+
+@font-face{
+ font-family:'LotteMartHappy';
+ font-style:normal;
+ font-weight:400;
+ src:url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'),
+     url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff');
+}
+@font-face{
+ font-family:'LotteMartHappy';
+ font-style:normal;
+ font-weight:700;
+ src:url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff2') format('woff2'),
+     url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff') format('woff');
+}
+
 /*common settings*/
 
 html {
@@ -8,7 +31,7 @@ html {
 
 
 *{
-    font-family: 'Spoqa Han Sans', sans-serif;
+    font-family: 'NanumSquare','Spoqa Han Sans', sans-serif;
 }
 html, body { 
      margin:0;
@@ -16,6 +39,12 @@ html, body {
     height: 100%; 
 }
 
+h1,h2,h3,h4,h5,h6{
+    
+    font-family: 'Godo',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700
+}
 /*네비게이션*/
 
 .kaulikelion_logo {
@@ -24,9 +53,9 @@ html, body {
 }
 
 .brand {
-  font-family: 'Spoqa Han Sans', serif;
-  font-size: 1.333rem;
-  font-weight: 400;
+  font-family: 'NanumSquare','Spoqa Han Sans', serif;
+  font-size: 0.9rem;
+  font-weight: 800;
   line-height: 1;
   margin-bottom: 0;
 }
@@ -38,7 +67,7 @@ html, body {
 .nav-link{
     font-size: 0.9333rem;
     line-height:1.4333;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 0.21em;
 }
 
@@ -50,6 +79,20 @@ html, body {
 .navbar-toggler {
     border: none;
 }
+
+
+@media (max-width:991px){
+    
+    .nav-link{
+    font-size: 0.9333rem;
+    line-height:1.4333;
+    font-weight: 800;
+    letter-spacing: 0.21em;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    }
+}
+/*본 페이지*/
 
 #wrap { 
     position: relative;
@@ -64,16 +107,37 @@ html, body {
 
 /*헤더*/
 
+@media (min-width: 768px){
+
 .header {
     
-    height: 650px;
+    height: 570px;
     background-image: url(../asset/main_bg.png);
     background-size : cover;
     /*background-repeat: no-repeat;*/
     background-position: center center;
     min-height:100%;
-}
+    }
 
+    .navbar-brand{
+        padding:10px 20px;
+        
+    }
+    .navbar-brand img{
+        height:100%;
+    }
+    
+    hr.star-light,hr.star-primary{
+        border-top:solid 2px;text-align:center;max-width:180px;}
+    
+    .navbar img{
+        height:100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+
+}
 
 @media (max-width:767px){
     
@@ -82,7 +146,7 @@ html, body {
         background-position: center center;
         background-image: url('/asset/main_bg.png');
         background-size: cover;
-        height: 650px;
+        height: 500px;
         min-height:100%;
      }
     .navbar-brand{
@@ -105,21 +169,24 @@ html, body {
     
 }
 
-
-/*.footer { */
-    /*position: relative; margin-top: -120px;  height: 120px; clear:both; */
-/*    text-align: center;*/
-/*    margin-bottom : 0;*/
-/* }*/
-
-
-/*.row {*/
-/*    text-align:center;*/
-/*}*/
+/*index-주점*/
 .loc {
-   margin-top: 1rem;
+   margin-top: 3rem;
    text-align: center;
+   font-weight: 800;
    /*color: #fff;*/
+}
+
+.loc .star1{
+    width:30px;
+    height:30px;
+    margin-right: 1rem;
+}
+
+.loc .star2{
+    width:30px;
+    height:30px;
+    margin-left: 1rem;
 }
 
 /*수평선 css*/
@@ -129,6 +196,13 @@ hr.star-light,hr.star-primary{
     border:none;border-top:solid 3px;
     text-align:center;max-width:250px;
     margin:25px auto 30px}
+    
+.star-long {
+    padding:0;
+    border:none;border-top:solid 3px;
+    text-align:center;max-width:800px;
+    margin:30px auto 30px}    
+    
     
 hr.star-light:after,hr.star-primary:after{
     content:"";font-family:FontAwesome;
@@ -176,28 +250,38 @@ hr.star-primary:after{background-color:#fff;color:#2C3E50}
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 40px 0px;
+    padding-top: 40px; 
+    padding-bottom: 0px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .sch_type .sch_type_div:first-child .btn{
-    border:1px solid #662408;
-    background-color: #662408;
-    color:#EFE7E6;
+    color:#800020;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    /*border:1px solid #662408;*/
+    /*background-color: #662408;*/
+    /*color:#EFE7E6;*/
     
 }
 .sch_type .sch_type_div .btn{
-    border:1px solid #EFE7E6;
-    background-color: #EFE7E6;
-    color:#662408;
+    color: #800020;
+    text-decoration:none;
+    font-size: 1.5rem;
+    /*border:1px solid #EFE7E6;*/
+    /*background-color: #EFE7E6;*/
+    /*color:#662408;*/
 }
 
 .sch_type_div .btn:hover{
-    border:1px solid #662408;
-    background-color: #662408;
-    color:#EFE7E6;
+    font-size:1.5rem;
+    color: #800020;
+    text-decoration: underline;
+    /*border:1px solid #662408;*/
+    /*background-color: #662408;*/
+    /*color:#EFE7E6;*/
     cursor: pointer;
 }
 
@@ -216,28 +300,42 @@ hr.star-primary:after{background-color:#fff;color:#2C3E50}
 }
 
 .sch_opt .sch_date_div:first-child .btn{
-    border:1px solid #662408;
-    background-color: #662408;
+    border:1px solid #800020;
+    background-color: #800020;
     color:#EFE7E6;
     
 }
 .sch_opt .sch_date_div .btn{
     border:1px solid #EFE7E6;
     background-color: #EFE7E6;
-    color:#662408;
+    color:#800020;
 }
 
 .sch_date_div .btn:hover{
-    border:1px solid #662408;
-    background-color: #662408;
+    border:1px solid #800020;
+    background-color: #800020;
     color:#EFE7E6;
     cursor: pointer;
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
 .sch_div {
-    width: 100%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width:991px){
+    .sch_div{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    }
 }
 
 
@@ -263,6 +361,60 @@ hr.star-primary:after{background-color:#fff;color:#2C3E50}
 /*    display:none;*/
 /*}*/
 
+.sch_program_div {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media (max-width:991px){
+    .sch_program_div{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+
+
+.sch_program_div_1, .sch_program_div_2{
+    text-align:center;
+    margin-top: 1.5rem;
+}
+
+.jaemok{
+    color:#800020;
+    font-family: 'LotteMartHappy', 'Godo','Montserrat',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:1.8rem;
+    text-align:center;
+}
+
+.jaemok .star1{
+    width:30px;
+    height:30px;
+    margin-right: 1rem;
+}
+
+.jaemok .star2{
+    width:30px;
+    height:30px;
+    margin-left: 1rem;
+}
+
+
+.sch_program_div img {
+    width:100%;
+}
+
+.submit{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
 /*항대 talk*/
 
 #talk {
@@ -278,22 +430,63 @@ hr.star-primary:after{background-color:#fff;color:#2C3E50}
     clear: both;
 }
 
-
-footer h6 {
+.footer_jaemok_h3{
+    font-size: 1.5rem;
+    font-family: 'NanumSquare';
+    font-weight:800;
     margin-top: 1rem;
     margin-bottom : 1rem;
+    
+}
+
+.footer_jaemok{
+    font-family: 'NanumSquare';
+    font-size:1.3rem;
+    font-weight:800;
+    margin-top: 2rem;
+    margin-bottom: 0;
 }
 
 
-
-#footer p {
-    margin-bottom: 1rem;
+.footer_sojaemok{
+    font-family: 'NanumSquare';
+    font-weight:800;
+    margin-top: 2rem;
+    margin-bottom: 0;
 }
+
+
+.thumbnail{
+    margin-top: 1.5rem;
+}
+
+.letter_x{
+    font-size:1.5rem;
+    font-weight:700;
+}
+
+#footer .thumbnail img{
+    width: 40px;
+    height:40px;
+}
+
+
+.logos{
+    margin-top: 1.5rem;
+    margin-bottom:1.5rem;
+    
+}
+
 
 #footer p img {
-    width: 32px;
-    height: 32px;
+    width: 25px;
+    height: 25px;
     
+}
+
+.logos .facebook-logo, .likelion-logo .email-logo{
+    background-color: #ffffff;
+    /*border-radius: 50%;*/
 }
 
 
