@@ -141,7 +141,7 @@ h1,h2,h3,h4,h5,h6{
 
 @media (max-width:767px){
     
-    header{
+    .header{
         text-align:center;background:none;color:#fff; 
         background-position: center center;
         background-image: url('/asset/main_bg.png');
@@ -195,7 +195,7 @@ hr.star-light,hr.star-primary{
     padding:0;
     border:none;border-top:solid 3px;
     text-align:center;max-width:250px;
-    margin:25px auto 30px}
+    margin:1px auto 30px}
     
 .star-long {
     padding:0;
@@ -490,12 +490,12 @@ hr.star-primary:after{background-color:#fff;color:#2C3E50}
 }
 
 /* 마당사업 주점 */
-
+@media (max-width: 400px){
 div.madangpanel {
     background-color: #eee;
     color: #444;
     cursor: pointer;
-    padding: 12px 18px;
+    padding: 12px 30px;
     width: 100%;
     text-align: left;
     border: none;
@@ -506,24 +506,21 @@ div.madangpanel {
     align-items:center;
     flex-wrap:nowrap;
     justify-content:space-between;
-}
-
+    }
+    
+#madangphoto{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
 div.madangpanel span img{
     width:10px;
-}
+    }
 
-div.madangpanel .like-btn{
-    padding:0;
-}
-
-div.madangpanel .like-count{
-    color:#000;
-    padding-right: 5px;
-}
 div.madangpanel.active, div.madangpanel:hover {
     background-color: #ddd;
-}
+    }
 
 div.panel {
     padding: 10px 10px;
@@ -532,13 +529,13 @@ div.panel {
     margin-bottom: 0px;
     opacity: 0.8;
     color:#662408;
-}
+    }
 /* 여기는 패널 안에 스타일 꾸미는 css야! */
 div.panel .panel-introduce-div, div.panel .panel-menu-div, div.panel .panel-theme-div, div.panel .panel-name-div{
     text-align: center;
     display: flex;
     flex-direction:column;
-}
+    }
 
 div.panel .panel-introduce-div span, div.panel .panel-menu-div span, div.panel .panel-theme-div span{
     font-size: 1.3em;
@@ -550,7 +547,7 @@ div.panel .panel-introduce-div span, div.panel .panel-menu-div span, div.panel .
     padding-bottom: 3px;
     margin-bottom: 7px;
     
-}
+    }
 
 
 div.panel .panel-name-div span{
@@ -562,57 +559,169 @@ div.panel .panel-name-div span{
     padding-top: 10px;
     padding-bottom: 3px;
     margin-bottom: 7px;
+    }
 }
 
-
-
-
-
-#map2{
-     width:70%;
-    margin-left: auto;
-    margin-right: auto;
-    height:400px;
-    margin-bottom: 20px;
-}
-
-@media (max-width:767px){
-    #map{
-    width:94%;
-    margin-left: auto;
-    margin-right: auto;
-    height:250px;
-    margin-bottom: 10px;
+@media (min-width: 401px) and (max-width:699px){
+div.madangpanel {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 12px 70px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    flex-wrap:nowrap;
+    justify-content:space-between;
     }
     
-    #map2{
-    width:94%;
+#madangphoto{
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    height:250px;
-    margin-bottom: 10px;
     }
-    
-    .acc{
-        width:94%;
+
+
+div.madangpanel span img{
+    width:10px;
     }
-    .container{
-        overflow: hidden;
+
+div.madangpanel.active, div.madangpanel:hover {
+    background-color: #ddd;
     }
-    
-}
-.panel img{
+
+div.panel {
+    padding: 10px 10px;
+    background-color: white;
+    display: none;
+    margin-bottom: 0px;
+    opacity: 0.8;
+    color:#662408;
+    }
+/* 여기는 패널 안에 스타일 꾸미는 css야! */
+div.panel .panel-introduce-div, div.panel .panel-menu-div, div.panel .panel-theme-div, div.panel .panel-name-div{
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    }
+
+div.panel .panel-introduce-div span, div.panel .panel-menu-div span, div.panel .panel-theme-div span{
+    font-size: 1.3em;
+    font-weight: bold;
     width:100%;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 7px;
+    
+    }
+
+
+div.panel .panel-name-div span{
+    font-size: 1.5em;
+    font-weight: bold;
+    width:100%;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 7px;
+    }
 }
 
-#madang{
-    color:#cf6044;
+@media (min-width: 700px){
+div.madangpanel {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 12px 240px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    }
+
+#madangphoto{
+    width: 32%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+
+div.madangpanel span img{
+    width:10px;
+    }
+
+div.madangpanel.active, div.madangpanel:hover {
+    background-color: #ddd;
+    }
+
+div.panel {
+    padding: 10px 10px;
+    background-color: white;
+    display: none;
+    margin-bottom: 0px;
+    opacity: 0.8;
+    color:#662408;
+    }
+/* 여기는 패널 안에 스타일 꾸미는 css야! */
+div.panel .panel-introduce-div, div.panel .panel-menu-div, div.panel .panel-theme-div, div.panel .panel-name-div{
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    }
+
+div.panel .panel-introduce-div span, div.panel .panel-menu-div span, div.panel .panel-theme-div span{
+    font-size: 1.3em;
+    font-weight: bold;
+    width:100%;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 7px;
+    
+    }
+
+
+div.panel .panel-name-div span{
+    font-size: 1.5em;
+    font-weight: bold;
+    width:100%;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 7px;
+    }
 }
 
-#madang .star-light{
-    color:#cf6044;
-    border-color: #cf6044;
-}
+/*#madangphoto {*/
+/*    width: 50%;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*}*/
+
+/*@media (max-width:700px){*/
+/*    #madangphoto{*/
+/*    width: 80%;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    }*/
+/*}*/
+/*여기야 여기*/
 
 /*라인업*/
 
