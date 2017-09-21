@@ -193,7 +193,7 @@ h1,h2,h3,h4,h5,h6{
 
 hr.star-light,hr.star-primary{
     padding:0;
-    border:none;border-top:solid 3px;
+    border:none;border-top:solid 2px;
     text-align:center;max-width:250px;
     margin:25px auto 30px}
     
@@ -279,13 +279,10 @@ hr.star-primary:after{background-color:#fff;color:#2C3E50}
     font-size:1.5rem;
     color: #800020;
     text-decoration: underline;
-    /*border:1px solid #662408;*/
-    /*background-color: #662408;*/
-    /*color:#EFE7E6;*/
     cursor: pointer;
 }
 
-#type2 {
+#type2,#type3 {
     display:none;
 }
 
@@ -321,13 +318,14 @@ hr.star-primary:after{background-color:#fff;color:#2C3E50}
 .row {
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
 }
 
 .sch_div {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1.5rem;
+    margin-top : 1.5rem;
 }
 
 @media (max-width:991px){
@@ -335,6 +333,8 @@ hr.star-primary:after{background-color:#fff;color:#2C3E50}
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1.5rem;
+    margin-top : 1.5rem;
     }
 }
 
@@ -382,6 +382,7 @@ hr.star-primary:after{background-color:#fff;color:#2C3E50}
 .sch_program_div_1, .sch_program_div_2{
     text-align:center;
     margin-top: 1.5rem;
+    margin-bottom:1.5rem;
 }
 
 .jaemok{
@@ -406,6 +407,16 @@ hr.star-primary:after{background-color:#fff;color:#2C3E50}
 }
 
 
+.jaemok_top{
+    margin-top: 1.5rem;
+    color:#800020;
+    font-family: 'LotteMartHappy', 'Godo','Montserrat',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:1.8rem;
+    text-align:center;
+}
+
 .sch_program_div img {
     width:100%;
 }
@@ -414,6 +425,441 @@ hr.star-primary:after{background-color:#fff;color:#2C3E50}
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
+
+.sch_program_div_2 .btn{
+    font-family: 'NanumSquare';
+    font-weight:700;
+}
+
+/*라인업*/
+@media screen and (max-width: 767px) {
+    .container {
+        overflow: hidden;
+    }
+}
+
+.line_type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 0px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line_type .line_type_div:first-child .btn{
+    color:#800020;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    
+}
+.line_type .line_type_div .btn{
+    color: #800020;
+    text-decoration:none;
+    font-size: 1.3rem;
+}
+
+.line_type_div .btn:hover{
+    color: #800020;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#type2 {
+    display:none;
+}
+
+.line_opt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line_opt .line_date_div:first-child .btn{
+    border:1px solid #800020;
+    background-color: #800020;
+    color:#EFE7E6;
+    
+}
+.line_opt .line_date_div .btn{
+    border:1px solid #EFE7E6;
+    background-color: #EFE7E6;
+    color:#800020;
+}
+
+.line_date_div .btn:hover{
+    border:1px solid #800020;
+    background-color: #800020;
+    color:#EFE7E6;
+    cursor: pointer;
+}
+
+
+.lineup_div {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width:991px){
+    .lineup_div{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+.sch_program_div_1, .sch_program_div_2{
+    text-align:center;
+    margin-top: 1.5rem;
+}
+
+
+
+.lineup_div img{
+    width:100%;
+}
+
+#line2 {
+    display:none;
+}
+
+.line_program_div {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width:991px){
+    .line_program_div{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+.line_program_div img {
+    width: 100%;
+}
+
+/*마당사업*/
+.acc{
+    margin-bottom:1.5rem;
+}
+
+/* 마당사업 주점 */
+@media (max-width: 400px){
+div.madangpanel {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 12px 30px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    }
+    
+#madangphoto{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+div.madangpanel span img{
+    width:10px;
+    }
+
+div.madangpanel.active, div.madangpanel:hover {
+    background-color: #ddd;
+    }
+
+div.panel {
+    padding: 10px 10px;
+    background-color: white;
+    display: none;
+    margin-bottom: 0px;
+    opacity: 0.8;
+    color:#662408;
+    }
+/* 여기는 패널 안에 스타일 꾸미는 css야! */
+div.panel .panel-introduce-div, div.panel .panel-menu-div, div.panel .panel-theme-div, div.panel .panel-name-div{
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    }
+
+div.panel .panel-introduce-div span, div.panel .panel-menu-div span, div.panel .panel-theme-div span{
+    font-size: 1.3em;
+    font-weight: bold;
+    width:100%;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 7px;
+    
+    }
+
+
+div.panel .panel-name-div span{
+    font-size: 1.5em;
+    font-weight: bold;
+    width:100%;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 7px;
+    }
+}
+
+@media (min-width: 401px) and (max-width:699px){
+div.madangpanel {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 12px 70px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    }
+    
+#madangphoto{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+
+div.madangpanel span img{
+    width:10px;
+    }
+
+div.madangpanel.active, div.madangpanel:hover {
+    background-color: #ddd;
+    }
+
+div.panel {
+    padding: 10px 10px;
+    background-color: white;
+    display: none;
+    margin-bottom: 0px;
+    opacity: 0.8;
+    color:#662408;
+    }
+/* 여기는 패널 안에 스타일 꾸미는 css야! */
+div.panel .panel-introduce-div, div.panel .panel-menu-div, div.panel .panel-theme-div, div.panel .panel-name-div{
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    }
+
+div.panel .panel-introduce-div span, div.panel .panel-menu-div span, div.panel .panel-theme-div span{
+    font-size: 1.3em;
+    font-weight: bold;
+    width:100%;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 7px;
+    
+    }
+
+
+div.panel .panel-name-div span{
+    font-size: 1.5em;
+    font-weight: bold;
+    width:100%;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 7px;
+    }
+}
+
+@media (min-width: 700px){
+div.madangpanel {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 12px 240px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    }
+
+#madangphoto{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+
+div.madangpanel span img{
+    width:10px;
+    }
+
+div.madangpanel.active, div.madangpanel:hover {
+    background-color: #ddd;
+    }
+
+div.panel {
+    padding: 10px 10px;
+    background-color: white;
+    display: none;
+    margin-bottom: 0px;
+    opacity: 0.8;
+    color:#662408;
+    }
+/* 여기는 패널 안에 스타일 꾸미는 css야! */
+div.panel .panel-introduce-div, div.panel .panel-menu-div, div.panel .panel-theme-div, div.panel .panel-name-div{
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    }
+
+div.panel .panel-introduce-div span, div.panel .panel-menu-div span, div.panel .panel-theme-div span{
+    font-size: 1.3em;
+    font-weight: bold;
+    width:100%;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 7px;
+    
+    }
+
+
+div.panel .panel-name-div span{
+    font-size: 1.5em;
+    font-weight: bold;
+    width:100%;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 7px;
+    }
+}
+
+
+
+
+/*인포*/
+
+.jaemok_small{
+    color:#800020;
+    font-family: 'LotteMartHappy', 'Godo','Montserrat',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:0.5rem;
+    text-align:center;
+}
+
+.info_opt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info_type_div:first-child .btn{
+    color:#800020;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    
+}
+.info_type_div .btn{
+    color: #800020;
+    text-decoration:none;
+    font-size: 1.2rem;
+}
+
+.info_type_div .btn:hover{
+    font-size:1.2rem;
+    color: #800020;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.info_div {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media (max-width:991px){
+    .info_div{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+
+
+.info_image_div_1, .info_image_div_2, .info_image_div_3{
+    text-align:center;
+    margin-top: 1.5rem;
+}
+
+.info_description{
+    font-size: 1rem;
+    font-weight:700;
+    
+}
+
+.info_div img{
+    width: 100%;
+}
+
+
+/*다음 지도*/
+
+#map{
+    width:300px;
+    height:350px;
+    margin-top: 0.5rem;
+    text-align:center;
+}
+
 
 /*항대 talk*/
 
@@ -485,7 +931,7 @@ hr.star-primary:after{background-color:#fff;color:#2C3E50}
 }
 
 .logos .facebook-logo, .likelion-logo .email-logo{
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     /*border-radius: 50%;*/
 }
 

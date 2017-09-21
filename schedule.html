@@ -32,7 +32,7 @@
     <!--네비게이션-->
  
     <nav class="navbar navbar-expand-lg navbar-light py-4">
-      <a href="#"><img class ="kaulikelion_logo"src="/img/kau_logo.png" alt="alt_text1"></a>
+      <a href="/index.html"><img class ="kaulikelion_logo"src="/img/kau_logo.png" alt="alt_text1"></a>
       
       <a class="navbar-brand mx-3" href="/index.html">
         <h3 class="brand">항공대 가을축제, 좋아항대</h3>
@@ -49,13 +49,13 @@
             <a class="nav-link px-lg-2" href="/schedule.html" lang = "ko">일정</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-lg-2" href="#" lang = "ko">라인업</a>
+            <a class="nav-link px-lg-2" href="/lineup.html" lang = "ko">라인업</a>
           </li>
           <li class="nav-item">
             <a class="nav-link px-lg-2" href="#" lang = "ko">마당사업</a>
           </li>
-          <li class="nav-item px-lg-2">
-            <a class="nav-link" href="#" lang = "ko">INFO</a>
+          <li class="nav-item">
+            <a class="nav-link  px-lg-2" href="/info.html" lang = "ko">INFO</a>
           </li>
           <!--<li class="nav-item px-lg-2">-->
           <!--  <a class="nav-link" href="#" lang = "ko">좋아항대Talk</a>-->
@@ -114,13 +114,62 @@
                  <div  id="sch2" class="sch_program_div_2">
                    <p class="jaemok"><img class="star1" src="/img/heart.png"/>우리별가요제<img class="star2" src="/img/heart.png"/></p>
                    <img src="/asset/fest_program_song.png" alt="22">  
-                  <p class= "submit"> <button type="button" class="btn btn-primary">본선팀 보러가기</button></p>
+                  <p class= "submit"> 
+                  <!-- Button -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  본선 팀 보러가기
+                  </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">알림</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                      정보를 취합 후 업로드 예정입니다. 조금만 기다려주세요!
+                      </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </p>
                     
                   <hr class="star-long">    
                   <p class="jaemok"><img class="star1" src="/img/heart.png"/>거상<img class="star2" src="/img/heart.png"/></p>
                    <img src="/asset/fest_program_geosang.jpg" alt="33">
-                   <p class= "submit"><button type="button" class="btn btn-primary">신청하러가기</button></p>
+                   <p class= "submit"> 
+                  <!-- Button -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  신청하러가기
+                  </button>
 
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">알림</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                      신청이 마감되었습니다.
+                      </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </p>
                  </div>
                </div>
              </div>
@@ -129,7 +178,7 @@
          </div>
          </div>
        </section>
-      
+      </div>      
       
      
   
@@ -148,13 +197,12 @@
         </ul>
         </p>
         <p class="logos">
-        <img src="/img/facebook_logo.png" alt ="alt text1" class ="facebook-logo mx-1"></img>
+        <a href="https://www.facebook.com/likelion.kau/"><img src="/img/facebook_logo.png" alt ="alt text1" class ="facebook-logo mx-1"></img></a>
         <a href="mailto:test@gmail.com"><img src="/asset/mail.png" alt="alt text2" class= "email-logo mx-1"></a>
         <a href="https://likelion.net/"><img src="/asset/likelion-logo.png" alt="alt text3" class= "likelion-logo mx-1"></a>
         </p>
         <p class="copyright">2017 &copy; Likelion KAU All Rights Reserved.</p>
       </footer>
-
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
