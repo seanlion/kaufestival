@@ -805,7 +805,7 @@ div.panel .panel-name-div span{
 }
 .info_type_div .btn{
     color: #800020;
-    text-decoration:none;
+    text-decoration: none;
     font-size: 1.2rem;
 }
 
@@ -833,11 +833,10 @@ div.panel .panel-name-div span{
     }
 }
 
-
-
-.info_image_div_1, .info_image_div_2, .info_image_div_3{
+.info_img_div_1, .info_img_div_2, .info_img_div_3{
     text-align:center;
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .info_description{
@@ -850,14 +849,10 @@ div.panel .panel-name-div span{
     width: 100%;
 }
 
-
-/*다음 지도*/
-
 #map{
-    width:300px;
-    height:350px;
-    margin-top: 0.5rem;
-    text-align:center;
+    width:400px;
+    height:400px;
+    margin-bottom:1.5rem;
 }
 
 

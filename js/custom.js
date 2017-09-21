@@ -26,8 +26,8 @@
  
    $('.btn4').on('click', function(){
       var target3 = $(this).attr('rel');
-      $('.btn3').css("text-decoration","none");
-      $('.btn3').css("color","#800020");
+      $('.btn4').css("text-decoration","none");
+      $('.btn4').css("color","#800020");
       $(this).css("text-decoration","underline");
       $(this).css("color","#800020");
       $("#"+target3).show().siblings(".row").hide();
