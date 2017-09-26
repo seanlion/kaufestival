@@ -549,9 +549,27 @@ hr.star-primary:after{background-color:#fff;color:#2C3E50}
     width: 100%;
 }
 
-/*마당사업*/
+/*마당사업 메뉴글자 css */
+.madangpanel_menu {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 12px 30px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    flex-wrap:nowrap;
+    justify-content:center;
+    }
+    
 .acc{
     margin-bottom:1.5rem;
+    width: 80%;
 }
 
 /* 마당사업 주점 */
