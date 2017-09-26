@@ -571,8 +571,19 @@ div.madangpanel {
     align-items:center;
     flex-wrap:nowrap;
     justify-content:space-between;
-    }
+}
     
+div.cycle-slideshow, .cycle-slideshow {
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+div.cycle-slideshow { width: 500px; min-width:200px; max-width: 500px; margin: 10px auto;
+    padding:0; position: relative;
+}    
+div.cycle-slideshow div.slide {width: 100%; height: 100%;}
+div.cycle-slideshow img {
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+
 #madangphoto{
     width: 80%;
     margin-left: auto;
@@ -584,7 +595,15 @@ div.madangpanel {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    }
+    
+}
+#madangphoto3{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
     
 div.madangpanel span img{
     width:10px;
@@ -622,6 +641,7 @@ div.panel .panel-introduce-div span, div.panel .panel-menu-div span, div.panel .
     }
 
 
+
 div.panel .panel-name-div span{
     font-size: 1.5em;
     font-weight: bold;
@@ -651,12 +671,30 @@ div.madangpanel {
     flex-wrap:nowrap;
     justify-content:space-between;
     }
-    
+
+div.cycle-slideshow, .cycle-slideshow {
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+div.cycle-slideshow { width: 500px; min-width:200px; max-width: 500px; margin: 10px auto;
+    padding:0; position: relative;
+}    
+div.cycle-slideshow div.slide {width: 100%; height: 100%;}
+div.cycle-slideshow img {
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+
 #madangphoto{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     }
+#madangphoto2{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
 
 
 div.madangpanel span img{
@@ -724,13 +762,29 @@ div.madangpanel {
     flex-wrap:nowrap;
     justify-content:space-between;
     }
+div.cycle-slideshow, .cycle-slideshow {
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+div.cycle-slideshow { width: 500px; min-width:200px; max-width: 500px; margin: 10px auto;
+    padding:0; position: relative;
+}    
+div.cycle-slideshow div.slide {width: 100%; height: 100%;}
+div.cycle-slideshow img {
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
 
 #madangphoto{
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     }
-
+#madangphoto2{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
 
 div.madangpanel span img{
     width:10px;
@@ -778,7 +832,9 @@ div.panel .panel-name-div span{
     padding-bottom: 3px;
     margin-bottom: 7px;
     }
+ 
 }
+
 
 
 
