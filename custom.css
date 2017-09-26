@@ -578,7 +578,14 @@ div.madangpanel {
     margin-left: auto;
     margin-right: auto;
     }
-
+    
+#madangphoto2{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    }
+    
 div.madangpanel span img{
     width:10px;
     }
